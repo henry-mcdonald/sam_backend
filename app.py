@@ -9,8 +9,8 @@ def entry_point():
     if request.method == 'POST':
         #response = getSamsResponse()
 
-        #return(request.form.get('userinput'))
-        return get_response(request.form.get('userinput'))
+        return(request.form.get('userinput'))
+        #return get_response(request.form.get('userinput'))
     elif request.method == 'GET':
         return 'Hello and Welcome, User'
 
