@@ -1,4 +1,5 @@
 from flask import Flask, request
+from samlogic import get_response
 
 app = Flask(__name__)
 
@@ -7,7 +8,9 @@ def entry_point():
     #return "hello"
     if request.method == 'POST':
         #response = getSamsResponse()
-        return 'this should be sams response'
+
+        #return(request.form.get('userinput'))
+        return get_response(request.form.get('userinput'))
     elif request.method == 'GET':
         return 'Hello and Welcome, User'
 
