@@ -5,10 +5,8 @@ import pickle
 import nltk
 from nltk.stem import WordNetLemmatizer
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.models import load_model
 
